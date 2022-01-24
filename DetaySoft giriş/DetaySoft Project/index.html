@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width_device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+
+<body>
+
+<div class="video-bg">
+    <video width="320" height="240" autoplay loop muted>
+     <source src="background.mp4" type="video/mp4">
+   </video>
+   </div>
+   
+   <div class="app">
+    <div class="header">
+     <div class="header-menu">  
+      <a class="menu-link" href="#"></a>
+     </div>
+     <div class="search-bar">
+      <input type="text" placeholder="Ne Aramıştınız">
+     </div>
+     <div class="header-profile">
+     
+     
+     </div>
+    </div>
+
+    <header>
+      <h1>To Do list 2022 </h1>
+      <form id="new-task-form">
+          <input type="text" name="new-task-input" id="new-task-input" placeholder="bugün ne planladın" />
+          <input type="submit" id="new-task-submit" value="plan ekle" />
+
+      </form>
+
+  </header>
+  <main>
+      <section class="task-list">
+          <h2>Planların</h2>
+
+          <div id="tasks">
+
+              <!-- <div class="task">
+        <div class="content">
+          <input 
+            type="text" 
+            class="text" 
+            value="A new task"
+            readonly>
+        </div>
+        <div class="actions">
+          <button class="edit">düzenle</button>
+          <button class="delete">sil</button>
+        </div>
+      </div> <!-->
+
+          </div>
+
+          <div class='time-frame'>
+              <div id='tarih-bolumu'></div>
+              <div id='saat-bolumu'></div>
+          </div>
+
+      </section>
+  </main>
+  <script src="main.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+  <script type="text/javascript">
+      $(window).load(function () {
+          $(document).ready(function () {
+              var interval = setInterval(function () {
+                  var momentNow = moment();
+                  $('#tarih-bolumu').html(momentNow.format('DD.MM.YYYY'));
+                  $('#saat-bolumu').html(momentNow.format('hh:mm:ss'));
+              }, 100);
+          });
+      });
+  </script>  
+
+  
+    </body>
+</html>
+        
+   

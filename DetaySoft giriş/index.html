@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>detaylogin</title>
+</head>
+<body>
+
+    <input class="c-checkbox" type="checkbox" id="start">
+<input class="c-checkbox" type="checkbox" id="progress2">
+<input class="c-checkbox" type="checkbox" id="progress3">
+<input class="c-checkbox" type="checkbox" id="finish">
+<div class="c-form__progress"></div>
+
+<div class="c-formContainer">
+  <div class="c-welcome">Welcome to ToDo     
+    <a href="DetaySoft Project/index.html"> ToDoya Devam Et</a>
+  </div>
+  <form class="c-form" action="">
+    <div class="c-form__group">
+      <label class="c-form__label" for="username">
+                    <input
+                        type="text"
+                        id="username"
+                        class="c-form__input"
+                        placeholder=" "
+                        pattern="[^\s]+" 
+                        required> <!--Formun gönderilmeden önce boşluk kısımlarının doldurulması gereklidir
+                        pattern kısmında herhangi bir boşluk istediğimi belittim(kullanıcı isminin birleşik yazılması istenmektedir)  -->
+
+                    <label class="c-form__next" for="progress2" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">Kullanıcı adınız nedir?</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+    <div class="c-form__group">
+      <label class="c-form__label" for="femail">
+                    <input
+                        type="email"
+                        id="femail"
+                        class="c-form__input"       
+                        placeholder=" "
+                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"  
+                        required> <!-- formun gönderilmeden önce boşluk kısımlarının doldurulması gereklidir
+                        pattern kısmında e-posta için gereklilikleri belitttim.ilk olarak harf giriliyor daha sonra "@"işaretini ve ondan sonra bir 
+                        harf daha asonra tekrar bir harf daha giriyoruz 
+                        daha sonra "." kontrol ediliyor ve ondan sonra bir harf daha giriyoruz (a@a.c) -->
+
+                    <label class="c-form__next" for="progress3" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">E-mail adresiniz nedir?</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+    <div class="c-form__group">
+      <label class="c-form__label" for="fpass">
+                    <input
+                        type="password"
+                        id="fpass"
+                        class="c-form__input"
+                        placeholder=" "
+                        required> <!-- formun gönderilmeden önce boşluğun doldurulması gereklidir --> 
+
+                    <label class="c-form__next" for="finish" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">Şifrenizi giriniz.</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+    <label class="c-form__toggle" for="start">Giriş Yap<span class="c-form__toggleIcon"></span></label>
+  </form>
+</div>
+</body>
+</html>
